@@ -1,13 +1,36 @@
 {
     "$schema":"https://frictionlessdata.io/schemas/table-schema.json",
+    "name": "lieux-covoiturage",
     "title":"Lieux de covoiturage",
     "description":"Spécification des lieux permettant le covoiturage",
+    "countryCode":"FR",
+    "path": "https://github.com/etalab/schema-lieux-covoiturage/raw/v0.1.3/schema.json",
+    "resources": [
+        {
+            "title": "Exemple de fichier lieux-covoiturage valide",
+            "path": "https://github.com/etalab/schema-lieux-covoiturage/raw/v1.0.3/exemple-valide.csv"
+        },
+        {
+            "title": "Ressource invalide",
+            "name": "exemple-invalide",
+            "path": "https://github.com/etalab/schema-lieux-covoiturage/raw/v0.1.3/exemple-invalide.csv"
+          }
+    ],
+    "sources": [
+        {
+            "title": "La loi n° 2014-58 du 27 janvier 2014 de modernisation de l’action publique territoriale et l’affirmation des métropoles (MAPTAM) acte la transformation des autorités organisatrices des transports urbains (AOTU) en autorités organisatrices de la mobilité (AOM) et l'extension de leurs compétences au champ des usages partagés de l'automobile (notamment le covoiturage) et des modes actifs",
+            "path": "https://www.legifrance.gouv.fr/affichTexte.do?cidTexte=JORFTEXT000028526298"
+        }
+    ],
+    "created": "2019-06-25",
+    "lastModified": "2019-10-31",
+    "version": "1.0.3",
     "keywords":[
         "covoiturage",
         "transport",
         "mobilité"
     ],
-    "countryCode":"FR",
+    
     "licenses": [
         {
           "title": "Licence Ouverte",
@@ -15,31 +38,18 @@
           "path": "https://www.etalab.gouv.fr/licence-ouverte-open-licence"
         }
       ],
-      "resources": [
-        {
-          "title": "Ressource valide",
-          "name": "exemple-valide",
-          "path": "https://github.com/etalab/schema-lieux-covoiturage/raw/v0.1.2/exemple-valide.csv"
-        },
-        {
-          "title": "Ressource invalide",
-          "name": "exemple-invalide",
-          "path": "https://github.com/etalab/schema-lieux-covoiturage/raw/v0.1.2/exemple-invalide.csv"
-        }
-      ],
-    "author":"Antoine Augusti pour Etalab",
-    "contact":"contact@transport.beta.gouv.fr",
     "contributors": [
+        {
+            "title":"Antoine Augusti pour Etalab",
+            "email":"contact@transport.beta.gouv.fr",
+            "organisation": "transport.data.gouv.fr",
+            "role": "author"
+        },
+        
         {
             "title": "Ishan Bhojwani",
             "email": "ishan@beta.gouv.fr",
             "organisation": "transport.data.gouv.fr",
-            "role": "contributor"
-        },
-        {
-            "title": "Antoine Augusti",
-            "email": "antoine.augusti@data.gouv.fr",
-            "organisation": "Etalab",
             "role": "contributor"
         },
         {
@@ -67,12 +77,6 @@
             "role": "contributor"
         }
     ],
-    "version":"0.1.2",
-    "created":"2019-06-25",
-    "updated":"2019-10-31",
-    "homepage":"https://github.com/etalab/schema-lieux-covoiturage",
-    "uri":"https://github.com/etalab/schema-lieux-covoiturage/raw/v0.1.2/schema.json",
-    "example":"https://github.com/etalab/schema-lieux-covoiturage/raw/v0.1.2/exemple-valide.csv",
     "fields":[
         {
             "name":"id_lieu",
